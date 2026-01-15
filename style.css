@@ -1,0 +1,92 @@
+img {
+  width: 100%;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: hsl(250, 20%, 96%); /* subtle custom */
+  --card: white;
+  --text: hsl(24, 5%, 18%);
+  --muted: hsl(30, 10%, 34%);
+  --accent: hsl(14, 45%, 36%);
+  --divider: hsl(30, 18%, 87%);
+}
+
+body {
+  background: var(--background);
+  font-family: "Outfit", sans-serif;
+  color: var(--muted);
+  padding: 2rem 1rem;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  background: var(--card);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+/* Headings */
+h2, h3 {
+  font-family: "Young Serif", serif;
+  color: var(--accent);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+}
+
+/* Prep box */
+section:first-of-type {
+  background: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+li::marker {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: 2rem 0;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+td {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--divider);
+}
+
+td:last-child {
+  color: var(--accent);
+  font-weight: bold;
+}
